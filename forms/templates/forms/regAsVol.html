@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Caminar by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		{% load staticfiles %}
+		<title>Register As A Volunteer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'Assets/RegAsVol/css/main.css' %}" />
+	</head>
+	<body>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						<header class="special">
+							<h2>Register As A Volunteer</h2>
+							<p><strong>You make a living by what you get. You make a life by what you give.<strong/></p>
+						</header>
+						<div class="content">
+							<p>Natural disasters making you feel helpless? You might feel that your efforts are just a drop in the bucket but it's the drops of water that make an ocean. Lend a helping hand and enlighten the lives of those not as fortunate as us all. </p>
+
+							<form method="post" action="#">
+							{% csrf_token %}
+								<div class="row uniform">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Name" required/>
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="tel" name="contact" id="contact" value="" placeholder="Contact" required/>
+									</div>
+									<!-- Break -->
+
+									<div class="12u$">
+										<input type="text" name="profession" id="profession" value="" placeholder="Profession" required />
+									</div>
+
+
+
+
+									<div class="6u$ 12u$(xsmall)">
+										<input type="text" name="location" id="location" placeholder="Location" required />
+										<br>
+									</div>
+
+									<!-- Break -->
+									<div class="12u$">
+										<textarea name="message" id="message" placeholder="How can you help?" rows="6"></textarea>
+										<br>
+									</div>
+<!--
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="copy" name="copy">
+										<label for="copy">Email me a copy of this message</label>
+									</div>
+
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="human" name="human" checked>
+										<label for="human">I am a human and not a robot</label>
+										<br>
+									</div> -->
+									<!-- Break -->
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Submit" class="alt"/></li>
+											<li><input type="reset" value="Reset" class="alt"/></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+						</div>
+
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style2">
+						<header>
+							<h2>Gallery</h2>
+							<p>Helping those in need</p>
+						</header>
+						<div class="content">
+							<div class="gallery">
+								<div>
+									<div class="l1">
+										<a href="{% static 'Images/RegAsVol/pic03.jpg' %}"><img src="{% static 'Images/RegAsVol/pic03.jpg' %}" alt="" /></a>
+									</div>
+								</div>
+								<div>
+									<div class="image right r1">
+										<a href="{% static 'Images/RegAsVol/pic01.jpg' %}"><img src="{% static 'Images/RegAsVol/pic01.jpg' %}" alt="" /></a>
+									</div>
+								</div>
+								<div>
+									<div class="image left l2">
+										<a href="{% static 'Images/RegAsVol/pic04.jpg' %}"><img src="{% static 'Images/RegAsVol/pic04.jpg' %}" alt="" /></a>
+									</div>
+								</div>
+								<div>
+									<div class="image right r2">
+										<a href="{% static 'Images/RegAsVol/pic05.jpg' %}"><img src="{% static 'Images/RegAsVol/pic05.jpg' %}" alt="" /></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<div class="copyright">
+				&copy; 404 Disaster Not Found. All rights reserved.
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'Assets/RegAsVol/js/jquery.min.js' %}"></script>
+			<script src="{% static 'Assets/RegAsVol/js/jquery.poptrox.min.js' %}"></script>
+			<script src="{% static 'Assets/RegAsVol/js/skel.min.js' %}"></script>
+			<script src="{% static 'Assets/RegAsVol/js/util.js' %}"></script>
+			<script src="{% static 'Assets/RegAsVol/js/main.js' %}"></script>
+
+	</body>
+</html>
